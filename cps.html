@@ -55,21 +55,21 @@
     <div class="section">
         <h2>CA证书及中间CA下载链接</h2>
         <ul>
-            <li>Root根证书：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Root_CA.crt">Maogeddd_Root_CA.crt</a></li>
-            <li>TLS中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_TLS_CA.crt">Maogeddd_TLS_CA.crt</a></li>
-            <li>代码签名中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Code_Signing_CA.crt">Maogeddd_Code_Signing_CA.crt</a></li>
-            <li>文档签名中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Document_Signing_CA.crt">Maogeddd_Document_Signing_CA.crt</a></li>
-            <li>时间戳签名中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Timestamping_CA.crt">Maogeddd_Timestamping_CA.crt</a></li>
+            <li>Root根证书：<a href="/cert/Maogeddd_Root_CA.crt">Maogeddd_Root_CA.crt</a></li>
+            <li>TLS中间CA：<a href="/cert/Maogeddd_TLS_CA.crt">Maogeddd_TLS_CA.crt</a></li>
+            <li>代码签名中间CA：<a href="/cert/Maogeddd_Code_Signing_CA.crt">Maogeddd_Code_Signing_CA.crt</a></li>
+            <li>文档签名中间CA：<a href="/cert/Maogeddd_Document_Signing_CA.crt">Maogeddd_Document_Signing_CA.crt</a></li>
+            <li>时间戳签名中间CA：<a href="/cert/Maogeddd_Timestamping_CA.crt">Maogeddd_Timestamping_CA.crt</a></li>
         </ul>
     </div>
 
     <div class="section">
         <h2>快速安装脚本</h2>
         <ul>
-            <li>Windows安装根证书：<a href="http://pki.mgddd.top:88/trust/install.reg">install.reg</a></li>
-            <li>Windows卸载根证书：<a href="hhttp://pki.mgddd.top:88/trust/uninstall.reg">uninstall.reg</a></li>
-            <li>Debian安装根证书: <a href="http://pki.mgddd.top:88/trust/install.sh">install.sh</a></li>
-            <li>Debian卸载根证书: <a href="http://pki.mgddd.top:88/trust/uninstall.sh">uninstall.sh</a></li>
+            <li>Windows安装根证书：<a href="/trust/install.reg">install.reg</a></li>
+            <li>Windows卸载根证书：<a href="/trust/uninstall.reg">uninstall.reg</a></li>
+            <li>Debian安装根证书: <a href="/trust/install.sh">install.sh</a></li>
+            <li>Debian卸载根证书: <a href="/trust/uninstall.sh">uninstall.sh</a></li>
         </ul>
     </div>
 
@@ -77,9 +77,9 @@
         <h3>快速安装使用教程</h3>
         <p>Windows：双击运行<code class="code-block">reg</code>文件添加至注册表，卸载同理。</p>
         <p>Debian系统安装根证书，终端运行：</p>
-        <div class="code-block">wget -qO- hhttp://pki.mgddd.top:88/trust/install.sh | bash</div>
+        <div class="code-block">wget -qO- http://certs.mgddd.top/trust/install.sh | bash</div>
         <p>Debian系统卸载根证书，终端运行：</p>
-        <div class="code-block">wget -qO- hhttp://pki.mgddd.top:88/trust/uninstall.sh | bash</div>
+        <div class="code-block">wget -qO- http://certs.mgddd.top/trust/uninstall.sh | bash</div>
     </div>
 
 </body>
