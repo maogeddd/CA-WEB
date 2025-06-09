@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS-认证业务声明</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #eee;
+            padding: 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 5px 0;
+        }
+        .note {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CPS-认证业务声明</h1>
+    <div class="section">
+        <p class="note">用于学习和测试用途的自签CA是不可能有认证业务声明的啦😽😽</p>
+        <p>如果你需要测试证书请联系我：<a href="mailto:maogeddd@outlook.com">maogeddd@Outlook.com</a></p>
+    </div>
+
+    <div class="section">
+        <h2>CA证书及中间CA下载链接</h2>
+        <ul>
+            <li>Root根证书：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Root_CA.crt">Maogeddd_Root_CA.crt</a></li>
+            <li>TLS中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_TLS_CA.crt">Maogeddd_TLS_CA.crt</a></li>
+            <li>代码签名中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Code_Signing_CA.crt">Maogeddd_Code_Signing_CA.crt</a></li>
+            <li>文档签名中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Document_Signing_CA.crt">Maogeddd_Document_Signing_CA.crt</a></li>
+            <li>时间戳签名中间CA：<a href="http://pki.mgddd.top:88/cert/Maogeddd_Timestamping_CA.crt">Maogeddd_Timestamping_CA.crt</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>快速安装脚本</h2>
+        <ul>
+            <li>Windows安装根证书：<a href="http://pki.mgddd.top:88/trust/install.reg">install.reg</a></li>
+            <li>Windows卸载根证书：<a href="hhttp://pki.mgddd.top:88/trust/uninstall.reg">uninstall.reg</a></li>
+            <li>Debian安装根证书: <a href="http://pki.mgddd.top:88/trust/install.sh">install.sh</a></li>
+            <li>Debian卸载根证书: <a href="http://pki.mgddd.top:88/trust/uninstall.sh">uninstall.sh</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>快速安装使用教程</h3>
+        <p>Windows：双击运行<code class="code-block">reg</code>文件添加至注册表，卸载同理。</p>
+        <p>Debian系统安装根证书，终端运行：</p>
+        <div class="code-block">wget -qO- hhttp://pki.mgddd.top:88/trust/install.sh | bash</div>
+        <p>Debian系统卸载根证书，终端运行：</p>
+        <div class="code-block">wget -qO- hhttp://pki.mgddd.top:88/trust/uninstall.sh | bash</div>
+    </div>
+
+</body>
+</html>
